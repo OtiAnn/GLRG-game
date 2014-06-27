@@ -16,13 +16,8 @@
       <a href="#menubar"><p id="desc">Let's find your <span class="gift">gift</span>!</p></a>
     </div>
   </div>
+
   <a name="menubar">
-  <div class="menu">
-    <%= link_to 'Members','/members#menubar', :class => "menu-link" %>
-    <%= link_to 'Rules','/rules#menubar', :class => "menu-link" %>
-    <%= link_to "Let's Play",'/posts/index#menubar', :class => "menu-link" %>
-    <%= link_to 'Login','/users/sign_in#menubar', :class => "menu-link" %>
-  </div>
 
   <div class="content">
     <%= yield %>
