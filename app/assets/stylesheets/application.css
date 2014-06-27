@@ -13,3 +13,27 @@
  *= require_tree .
  *= require_self
  */
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.navbar {
+  height: 800px;
+  background-image: url('bg2-blur.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*footer*/
+.footer {
+  height: 60px;
+  position: relative;
+  top: 0;
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  line-height: 60px;
+}

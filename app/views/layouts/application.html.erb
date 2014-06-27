@@ -7,8 +7,30 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class="navbar">
+    <div class="cover-box">
+      <p id="title"><%= link_to 'GLRG', root_path %></p>
+      <p id="sub-title">100 x 101</p>
+      <p id="date">7/19</p>
+      <p id="time">12:00-18:00</p>
+      <a href="#menubar"><p id="desc">Let's find your <span class="gift">gift</span>!</p></a>
+    </div>
+  </div>
+  <a name="menubar">
+  <div class="menu">
+    <%= link_to 'Members','/members#menubar', :class => "menu-link" %>
+    <%= link_to 'Rules','/rules#menubar', :class => "menu-link" %>
+    <%= link_to "Let's Play",'/posts/index#menubar', :class => "menu-link" %>
+    <%= link_to 'Login','/users/sign_in#menubar', :class => "menu-link" %>
+  </div>
 
-<%= yield %>
+  <div class="content">
+    <%= yield %>
+  </div>
+
+  <div class="footer">
+    <p>我是footer</p>
+  </div>
 
 </body>
 </html>
