@@ -1,0 +1,78 @@
+
+.game {
+  width: 800px;
+  min-height: 100px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+.game-process {
+  margin-bottom: 40px;
+}
+
+.game-process span {
+  border: 1px solid #000;
+  border-radius: 50%;
+  font-size: 3em;
+  display: inline-block;
+  width: 50px;
+  margin: 0 73px;
+}
+#game-process-1 {
+  padding: 0 20px 0 12px;
+}
+#game-process-2 {
+  padding: 0 20px 0 11px;
+}
+#game-process-3 {
+  padding: 0 20px 0 10px;
+}
+#game-process-4 {
+  padding: 0 20px 0 9px;
+}
+#game-title {
+  font-size: 3em;
+  letter-spacing: 5px;
+  border-bottom: 3px solid #eee;
+  line-height: 50px;
+}
+
+#game-desc {
+  font-size: 24px;
+  letter-spacing: 1px;
+  margin: 10px;
+}
+
+#game-desc li {
+  margin-left: 50px;
+  line-height: 40px;
+}
+.game-btn{
+  border: 1px solid #000;
+  border-radius: 5px;
+  display: inline-block;
+  width: 128px;
+  letter-spacing: 5px;
+  line-height: 50px;
+  margin-left: 300px;
+  overflow: hidden;
+  padding: 0 40px;
+  position: relative;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+}
+.game-btn:hover {
+  padding-left: 20px;
+  padding-right: 50px;
+}
+.game-btn .lsf-icon {
+  line-height: 50px;
+  position: absolute;
+  right: -35px;
+  top: 0;
+  -webkit-transition: all 0.3s ease;
+}
+.game-btn:hover .lsf-icon{
+  position: absolute;
+  right: 0;
+  -webkit-transition: all 0.3s ease;
+}
