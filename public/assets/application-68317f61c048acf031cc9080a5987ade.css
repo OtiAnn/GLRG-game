@@ -1,0 +1,420 @@
+/* LigatureSymbols CSS */
+
+
+@font-face {
+    font-family: 'LigatureSymbols';
+    src: url('LigatureSymbols-2.11.eot');
+    src: url('LigatureSymbols-2.11.eot?#iefix') format('embedded-opentype'),
+         url('LigatureSymbols-2.11.woff') format('woff'),
+         url('LigatureSymbols-2.11.ttf') format('truetype'),
+         url('LigatureSymbols-2.11.svg#LigatureSymbols') format('svg');
+    src: url('LigatureSymbols-2.11.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.lsf, .lsf-icon:before {
+  font-family: 'LigatureSymbols';
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  -ms-text-rendering: optimizeLegibility;
+  -o-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.lsf-icon:before {
+  content:attr(title);
+  margin: 0 0.3em;
+  font-size:190%;
+}
+
+.lsf-icon.menu {
+    padding: 2px;
+    cursor: pointer;
+  }
+
+.lsf-icon.menu:before {
+  content: '\E08e';
+  font-size: 230%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 7px 16px;
+  margin-left: -40px;
+}
+
+.lsf-icon.search {
+    padding: 2px;
+    cursor: pointer;
+  }
+
+.lsf-icon.search:before {
+  content: '\E116';
+  font-size: 210%;
+  color: rgba(0, 0, 0, 0.43);
+  padding: 3px 17px 2px 17px;
+  position: relative;
+  top: -90px;
+  left: 210px;
+  outline: none;
+}
+/*content*/
+
+.content {
+  position: relative;
+  background-color: #fff;
+  min-height: 1300px;
+}
+
+
+.menu {
+  position: relative;
+  width: 100%;
+  height: 160px;
+  top: 10px;
+  padding-left: 12px;
+}
+.menu-link {
+  position: relative;
+  float: left;
+  width: 355px;
+  text-align: center;
+  font-size: 40px;
+  border: 1px solid;
+  padding: 20px;
+  margin-left: -1px;
+  text-decoration: none;
+  font-family: halvitica;
+  color: #000;
+  letter-spacing: 14px;
+}
+.menu-link:hover {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+  -webkit-transition: all 0.2s ease-out;
+}
+
+.menu-link:hover:before, #selected:before {
+  content: "";
+  position: absolute;
+  border: 20px solid transparent;
+  width: 0;
+  height: 0;
+  top: 80px;
+  left: 153px;
+  border-top: 25px solid #000;
+  -webkit-transition: all 0.3s ease-out;
+}
+
+#selected {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+}
+/*header*/
+
+.cover-box {
+  border: 1px solid #fff;
+  margin: 100px 25%;
+  position: absolute;
+  top: 50px;
+  left: 120px;
+  width: 500px;
+  height: 450px;
+}
+.cover-box p {
+  color: #fff;
+}
+.cover-box a{
+  text-decoration: none;
+  color: #fff;
+}
+.cover-box #title {
+  font-size: 11em;
+  position: relative;
+  top: -150px;
+  font-family: halvitica;
+}
+.cover-box #sub-title {
+  position: absolute;
+  top: 145px;
+  font-size: 2em;
+  width: 100%;
+  text-align: center;
+  line-height: 50px;
+  font-family: monospace;
+}
+.cover-box #sub-title:before, #sub-title:after {
+  content: "";
+  display: block;
+  width: 30%;
+  border: 1px solid #eee;
+  position: absolute;
+  top: 25px;
+}
+.cover-box #sub-title:before {
+  left: 15px;
+}
+.cover-box #sub-title:after {
+  right: 15px;
+}
+.cover-box #date {
+  position: absolute;
+  top: 235px;
+  margin: 0 20%;
+  font-size: 6em;
+  font-weight: 100;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 30px;
+}
+.cover-box #time {
+  width: 470px;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  letter-spacing: 28px;
+  padding-left: 26px;
+  font-size: 26px;
+  line-height: 30px;
+  position: absolute;
+  top: 310px;
+  margin: 0 15px;
+  padding-top: 3px
+}
+.gift{
+  position:relative;
+}
+.gift:before{
+  content: "";
+  position: absolute;
+  border: 5px solid transparent;
+  width: 0;
+  height: 0;
+  border-top: 15px solid #fff;
+  top: -7px;
+  right: 6px;
+  -webkit-transform: rotate(30deg);
+      -ms-transform: rotate(30deg);
+       -o-transform: rotate(30deg);
+          transform: rotate(30deg);
+  -webkit-animation: topdown1 ease-in 0.5s infinite alternate;
+}
+.gift:after{
+  content: "";
+  position: absolute;
+  border: 5px solid transparent;
+  width: 0;
+  height: 0;
+  border-top: 15px solid #fff;
+  top: -9px;
+  right: 16px;
+  -webkit-transform: rotate(-5deg);
+      -ms-transform: rotate(-5deg);
+       -o-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+  -webkit-animation: topdown2 ease-in 0.5s infinite alternate;
+  }
+  @-webkit-keyframes topdown1 {
+  from {top: -7px;}
+  to {top: -3px;}
+  }
+  @-webkit-keyframes topdown2 {
+  from {top: -9px;}
+  to {top: -5px;}
+}
+.cover-box #desc {
+  font-family: Nanum Pen Script;
+  font-weight: 900;
+  font-size: 3em;
+  letter-spacing: 5px;
+  position: absolute;
+  top: 320px;
+  width: 100%;
+  text-align: center;
+  -webkit-transition: all 0.5s ease;
+}
+
+.cover-box #desc:hover{
+  color: #FCFC7F;
+  cursor: pointer;
+}
+/*member*/
+
+.member {
+  position: relative;
+  width: 1400px;
+  margin-left: 20px;
+}
+.member-100 > div, .member-101 > div {
+  float: left;
+  border-top: 10px solid;
+  width: 240px;
+  height: 500px;
+  margin: 20px;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.member-100-1 {
+  background-image: url('https://dl.dropboxusercontent.com/u/44654998/gglab/shady.png');
+}
+.member-100-2 {
+  background-image: url('https://dl.dropboxusercontent.com/u/44654998/gglab/roe.png');
+}
+.member-100-3 {
+  background-image: url('https://dl.dropboxusercontent.com/u/44654998/gglab/annie.png');
+}
+.member-100-4 {
+  background-image: url('https://dl.dropboxusercontent.com/u/44654998/gglab/eat.png');
+}
+.member-100-5 {
+  background-image: url('https://dl.dropboxusercontent.com/u/44654998/gglab/chu.png');
+}
+.member-101-1 {
+  background-image: url('https://dl.dropboxusercontent.com/u/44654998/gglab/handsome.png');
+}
+.member-101-2 {
+  background-image: url('https://dl.dropboxusercontent.com/u/44654998/gglab/summer.png');
+}
+.member-101-3 {
+  background-image: url('https://dl.dropboxusercontent.com/u/44654998/gglab/yen.png');
+}
+.member-101-4 {
+  background-image: url('https://dl.dropboxusercontent.com/u/44654998/gglab/hsu.png');
+}
+.member-101-5 {
+  background-image: url('https://dl.dropboxusercontent.com/u/44654998/gglab/boo.png');
+}
+.member-100-desc, .member-101-desc {
+  margin-top: 380px;
+  background-color: rgba(0,0,0,0.4);
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 1px 15px;
+  line-height: 7px;
+  color: #fff;
+}
+
+.game {
+  width: 800px;
+  min-height: 100px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+.game-process {
+  margin-bottom: 40px;
+}
+
+.game-process span {
+  border: 1px solid #000;
+  border-radius: 50%;
+  font-size: 3em;
+  display: inline-block;
+  width: 50px;
+  margin: 0 73px;
+}
+#game-process-1 {
+  padding: 0 20px 0 12px;
+}
+#game-process-2 {
+  padding: 0 20px 0 11px;
+}
+#game-process-3 {
+  padding: 0 20px 0 10px;
+}
+#game-process-4 {
+  padding: 0 20px 0 9px;
+}
+#game-title {
+  font-size: 3em;
+  letter-spacing: 5px;
+  border-bottom: 3px solid #eee;
+  line-height: 50px;
+}
+
+#game-desc {
+  font-size: 24px;
+  letter-spacing: 1px;
+  margin: 10px;
+}
+
+#game-desc li {
+  margin-left: 50px;
+  line-height: 40px;
+}
+.game-btn{
+  border: 1px solid #000;
+  border-radius: 5px;
+  display: inline-block;
+  width: 128px;
+  letter-spacing: 5px;
+  line-height: 50px;
+  margin-left: 300px;
+  overflow: hidden;
+  padding: 0 40px;
+  position: relative;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+}
+.game-btn:hover {
+  padding-left: 20px;
+  padding-right: 50px;
+}
+.game-btn .lsf-icon {
+  line-height: 50px;
+  position: absolute;
+  right: -35px;
+  top: 0;
+  -webkit-transition: all 0.3s ease;
+}
+.game-btn:hover .lsf-icon{
+  position: absolute;
+  right: 0;
+  -webkit-transition: all 0.3s ease;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.navbar {
+  height: 800px;
+  background-color: #000;
+  background-image: url('https://dl.dropboxusercontent.com/u/44654998/gglab/bg2-blur.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*footer*/
+.footer {
+  height: 60px;
+  position: relative;
+  top: 0;
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  line-height: 60px;
+}
