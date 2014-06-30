@@ -22,5 +22,7 @@ module GLRG
     config.assets.initialize_on_precompile = false
     config.serve_static_assets = true
     config.assets.compile = true
+    config.assets.enabled = true
+    config.assets.precompile += %w( *.css *.js )
   end
 end
