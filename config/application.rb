@@ -24,12 +24,12 @@ module GLRG
     config.assets.compile = true
     config.assets.enabled = true
     config.assets.precompile += [
-      'stylesheets/ligature_symbols.css',
-      'stylesheets/LigatureSymbols-2.11.eot',
-      'stylesheets/LigatureSymbols-2.11.otf',
-      'stylesheets/LigatureSymbols-2.11.svg',
-      'stylesheets/LigatureSymbols-2.11.ttf',
-      'stylesheets/LigatureSymbols-2.11.woff'
+      'ligature_symbols.css',
+      'LigatureSymbols-2.11.eot',
+      'LigatureSymbols-2.11.otf',
+      'LigatureSymbols-2.11.svg',
+      'LigatureSymbols-2.11.ttf',
+      'LigatureSymbols-2.11.woff'
     ]
   end
 end
