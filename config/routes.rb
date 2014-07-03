@@ -12,6 +12,7 @@ Rails.application.routes.draw do
 
   get 'members' => 'pages#members'
   get 'rules' => 'pages#rules'
+  get 'intro' => 'pages#intro'
 
   get 'find_mate' => 'posts#find_mate'
 end

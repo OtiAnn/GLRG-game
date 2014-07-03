@@ -1,7 +1,7 @@
 <div class="menu">
   <%= link_to 'Members','/members#menubar', :class => "menu-link" %>
   <%= link_to 'Rules','/rules#menubar', :class => "menu-link", :id => "selected" %>
-  <%= link_to "Let's Play",'/posts#menubar', :class => "menu-link" %>
+  <%= link_to "Let's Play",'/intro#menubar', :class => "menu-link" %>
   <% if user_signed_in? %>
     <%= link_to "Sign-out", destroy_user_session_path, method: :delete, :class => 'menu-link' %>
   <% else %>

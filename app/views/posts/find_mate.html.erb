@@ -1,7 +1,7 @@
 <div class="menu">
   <%= link_to 'Members','/members#menubar', :class => "menu-link" %>
   <%= link_to 'Rules','/rules#menubar', :class => "menu-link" %>
-  <%= link_to "Let's Play",'/posts#menubar', :class => "menu-link", :id => "selected" %>
+  <%= link_to "Let's Play",'/intro#menubar', :class => "menu-link", :id => "selected" %>
   <% if user_signed_in? %>
     <%= link_to "Sign-out", destroy_user_session_path, method: :delete, :class => 'menu-link' %>
   <% else %>
@@ -14,10 +14,18 @@
   <div id="game-desc">
     <p>親愛的<span id="user-name"><%= @user.user_name if current_user.present? %></span>，以下是你的物品：</p>
     <ol>
-    <% @stuffs.each do |stuff|%>
+    <% @stuffs.each do |stuff| %>
       <li><%= stuff.name %></li>
     <% end %>
     </ol>
   </div>
-  <div class="back-btn"><span class="lsf-icon" title="arrowleft"></span><%= link_to 'Back', '/posts/#menubar' %></div>
+  <div id="game-desc">
+    <p>有一個幸運兒的靈魂伴侶是學長姐，Try it！</p>
+    <li>雪迪：發哥令牌</li>
+    <li>香菇：高鐵票</li>
+    <li>小洛：工作證</li>
+    <li>小丘：悠遊卡</li>
+    <li>小憋：Mac <3 </li>
+  </div>
+  <div class="back-btn"><span class="lsf-icon" title="arrowleft"></span><%= link_to 'Back', '/intro/#menubar' %></div>
 </div>

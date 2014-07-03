@@ -5,4 +5,7 @@ class PagesController < ApplicationController
   def rules
 
   end
+  def intro
+
+  end
 end
