@@ -1,7 +1,9 @@
 class PostsController < ApplicationController
   def index
+
   end
   def show
+
   end
   def new
   end
@@ -12,6 +14,11 @@ class PostsController < ApplicationController
   def update
   end
   def destroy
+  end
+
+  def find_mate
+    @user = current_user
+    @stuffs = @user.stuffs
   end
 
   private
