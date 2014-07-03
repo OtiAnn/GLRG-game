@@ -1,1 +1,11 @@
-comments#form
+<%= form_for @comment do |f| %>
+  <div class="answer">
+    <%= f.label :"寫下你的答案：", :class => "lsf-icon", :title => "comment" %>
+    <br>
+    <%= f.text_field :body %>
+  </div>
+  <%= f.hidden_field :post_id %>
+  <div class="submit">
+    <%= f.submit :"送出答案", :class => "btn" %>
+  </div>
+<% end %>

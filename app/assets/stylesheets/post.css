@@ -1,0 +1,57 @@
+.post {
+  width: 600px;
+  min-height: 1300px;
+  margin: 0 auto;
+  position: relative;
+  left: -360px;
+}
+#game-title {
+  font-size: 3em;
+  letter-spacing: 5px;
+  border-bottom: 3px solid #eee;
+  line-height: 50px;
+}
+
+#game-desc {
+  font-size: 24px;
+  letter-spacing: 1px;
+  margin: 40px 10px;
+}
+
+#game-desc li {
+  margin-left: 50px;
+  line-height: 40px;
+}
+
+#user-name {
+  color: #0E138A;
+  font-size: 27px;
+  border: 3px solid #0E138A;
+  padding: 5px;
+  letter-spacing: 5px;
+  margin: 0 10px;
+}
+#game-desc img {
+  margin: 0 100px;
+}
+.comment {
+  position: absolute;
+  top: 170px;
+  left: 745px;
+}
+.comment .game {
+  width: 620px;
+}
+.comment p {
+  border: 1px solid #aaa;
+  line-height: 60px;
+  padding-left: 20px;
+}
+.comment .game-btn {
+  margin-left: 490px;
+}
+.answer {
+  margin-top: 70px;
+  border-top: 1px dashed #999;
+  padding-top: 40px;
+}
