@@ -46,7 +46,7 @@
   margin-left: 50px;
   line-height: 40px;
 }
-.game-btn{
+.game-btn, .back-btn{
   border: 1px solid #000;
   border-radius: 5px;
   display: inline-block;
@@ -60,19 +60,31 @@
   text-decoration: none;
   -webkit-transition: all 0.3s ease;
 }
-.game-btn:hover {
+.game-btn:hover, .back-btn:hover {
   padding-left: 20px;
   padding-right: 50px;
 }
-.game-btn .lsf-icon {
+.game-btn .lsf-icon, .back-btn .lsf-icon {
   line-height: 50px;
   position: absolute;
   right: -35px;
   top: 0;
   -webkit-transition: all 0.3s ease;
 }
-.game-btn:hover .lsf-icon{
+.game-btn:hover .lsf-icon, .back-btn:hover .lsf-icon{
   position: absolute;
   right: 0;
   -webkit-transition: all 0.3s ease;
+}
+.game-btn a, .back-btn a {
+  text-decoration: none;
+  color: #000;
+}
+
+#user-name {
+  color: #0E138A;
+  font-size: 35px;
+  border-bottom: 3px solid #0E138A;
+  letter-spacing: 5px;
+  margin: 0 10px;
 }
