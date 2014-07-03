@@ -1,50 +1,39 @@
-
+.play {
+  position: relative;
+  width: 100%;
+  min-height: 160px;
+  top: 10px;
+  padding-left: 12px;
+  margin-bottom: 70px;
+}
 .game {
+  position: relative;
+  float: left;
+  width: 355px;
+}
+
+.game-play{
   width: 800px;
   min-height: 100px;
   margin: 0 auto;
-  margin-bottom: 70px;
-}
-.game-process {
-  margin-bottom: 40px;
 }
 
-.game-process span {
-  border: 1px solid #000;
-  border-radius: 50%;
-  font-size: 3em;
-  display: inline-block;
-  width: 50px;
-  margin: 0 73px;
-}
-#game-process-1 {
-  padding: 0 20px 0 12px;
-}
-#game-process-2 {
-  padding: 0 20px 0 11px;
-}
-#game-process-3 {
-  padding: 0 20px 0 10px;
-}
-#game-process-4 {
-  padding: 0 20px 0 9px;
-}
 #game-title {
-  font-size: 3em;
-  letter-spacing: 5px;
+  font-size: 2em;
+  letter-spacing: 7px;
   border-bottom: 3px solid #eee;
-  line-height: 50px;
+  line-height: 60px;
 }
 
 #game-desc {
-  font-size: 24px;
+  font-size: 1.2em;
   letter-spacing: 1px;
   margin: 10px;
 }
 
 #game-desc li {
-  margin-left: 50px;
-  line-height: 40px;
+  margin-left: 10px;
+  line-height: 26px;
 }
 .game-btn, .back-btn{
   border: 1px solid #000;
@@ -53,7 +42,7 @@
   width: 128px;
   letter-spacing: 5px;
   line-height: 50px;
-  margin-left: 300px;
+  margin-left: 35%;
   overflow: hidden;
   padding: 0 38px;
   position: relative;
