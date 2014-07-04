@@ -14,8 +14,12 @@
   letter-spacing: 5px;
   margin: 0 10px;
 }
-#game-desc img {
-  margin: 0 100px;
+#game-desc-img {
+  width: 101%;
+  height: 500px;
+  background-image: url('game5.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .comment {
   position: absolute;
