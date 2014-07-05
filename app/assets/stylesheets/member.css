@@ -1,15 +1,22 @@
 /*member*/
 .member {
   position: relative;
-  width: 1400px;
-  margin-left: 20px;
+  width: 98%;
+  height: 1350px;
+  top: 30px;
+  margin: 0 2%;
+}
+
+.member-100, .member-101 {
+  width: 100%;
 }
 .member-100 > div, .member-101 > div {
   float: left;
   border-top: 10px solid;
-  width: 240px;
-  height: 500px;
-  margin: 20px;
+  width: 18%;
+  margin-right: 2%;
+  margin-bottom: 60px;
+  height: 600px;
   background-color: #000;
   background-repeat: no-repeat;
   background-size: cover;
@@ -45,7 +52,7 @@
   background-image: url('https://dl.dropboxusercontent.com/u/44654998/gglab/boo.png');
 }
 .member-100-desc, .member-101-desc {
-  margin-top: 380px;
+  margin-top: 480px;
   background-color: rgba(0,0,0,0.4);
   font-size: 18px;
   letter-spacing: 1px;
