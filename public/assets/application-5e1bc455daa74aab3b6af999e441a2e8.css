@@ -1,0 +1,455 @@
+/*content*/
+
+.content {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+}
+
+.menu {
+  position: relative;
+  width: 98%;
+  height: 110px;
+  top: 10px;
+  margin-left: 1%;
+}
+
+.menu-link {
+  position: relative;
+  float: left;
+  width: 25%;
+  height: 75px;
+  line-height: 70px;
+  text-align: center;
+  font-size: 2em;
+  border: 1px solid;
+  margin-left: -1px;
+  text-decoration: none;
+  font-family: halvitica;
+  color: #000;
+  letter-spacing: 10px;
+}
+
+.menu-link:hover {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+  -webkit-transition: all 0.2s ease-out;
+}
+
+.menu-link:hover .menu-link:before:hover, #selected:before {
+  content: "";
+  position: absolute;
+  border: 20px solid transparent;
+  width: 0;
+  height: 0;
+  top: 74px;
+  left: 43.46%;
+  border-top: 25px solid #000;
+}
+
+#selected {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+}
+/*header*/
+
+.cover-box {
+  border: 1px solid #fff;
+  position: relative;
+  margin: 0 auto;
+  top: 150px;
+  max-width: 500px;
+  height: 56.25%;
+}
+.cover-box p {
+  color: #fff;
+}
+.cover-box a{
+  text-decoration: none;
+  color: #fff;
+}
+.cover-box #title {
+  font-size: 11em;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  position: absolute;
+  top: 22px;
+}
+.cover-box #sub-title {
+  position: absolute;
+  top: 145px;
+  font-size: 2em;
+  width: 100%;
+  text-align: center;
+  line-height: 50px;
+  font-family: monospace;
+}
+.cover-box #sub-title:before, #sub-title:after {
+  content: "";
+  display: block;
+  width: 30%;
+  border: 1px solid #eee;
+  position: absolute;
+  top: 25px;
+}
+.cover-box #sub-title:before {
+  left: 15px;
+}
+.cover-box #sub-title:after {
+  right: 15px;
+}
+.cover-box #date {
+  position: absolute;
+  top: 115px;
+  width: 100%;
+  margin-left: 3%;
+  font-size: 6em;
+  text-align: center;
+  letter-spacing: 30px;
+}
+.cover-box #time {
+  width: 94%;
+  margin-left: 3%;
+  text-align: center;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  letter-spacing: 20px;
+  font-size: 2em;
+  position: absolute;
+  top: 290px;
+  line-height: 40px;
+  padding-left: 4.5%;
+  font-family: monospace;
+}
+.gift{
+  position:relative;
+}
+.gift:before{
+  content: "";
+  position: absolute;
+  border: 5px solid transparent;
+  width: 0;
+  height: 0;
+  border-top: 15px solid #fff;
+  top: -7px;
+  right: 6px;
+  -webkit-transform: rotate(30deg);
+      -ms-transform: rotate(30deg);
+       -o-transform: rotate(30deg);
+          transform: rotate(30deg);
+  -webkit-animation: topdown1 ease-in 0.5s infinite alternate;
+}
+.gift:after{
+  content: "";
+  position: absolute;
+  border: 5px solid transparent;
+  width: 0;
+  height: 0;
+  border-top: 15px solid #fff;
+  top: -9px;
+  right: 16px;
+  -webkit-transform: rotate(-5deg);
+      -ms-transform: rotate(-5deg);
+       -o-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+  -webkit-animation: topdown2 ease-in 0.5s infinite alternate;
+  }
+  @-webkit-keyframes topdown1 {
+  from {top: -7px;}
+  to {top: -3px;}
+  }
+  @-webkit-keyframes topdown2 {
+  from {top: -9px;}
+  to {top: -5px;}
+}
+.cover-box #desc {
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 3em;
+  letter-spacing: 5px;
+  position: absolute;
+  top: 325px;
+  width: 100%;
+  text-align: center;
+  -webkit-transition: all 0.5s ease;
+}
+
+.cover-box #desc:hover{
+  color: #FCFC7F;
+  cursor: pointer;
+}
+/*member*/
+
+.member {
+  position: relative;
+  width: 94%;
+  height: 1400px;
+  margin: 0 4%;
+  padding: 30px 0;
+}
+
+.member-100, .member-101 {
+  width: 100%;
+}
+.member-100 > div, .member-101 > div {
+  float: left;
+  border-top: 10px solid;
+  width: 18%;
+  margin-right: 2%;
+  margin-bottom: 60px;
+  height: 600px;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.member-100-1 {
+  background-image: url('https://dl.dropboxusercontent.com/u/44654998/gglab/shady.png');
+}
+.member-100-2 {
+  background-image: url('https://dl.dropboxusercontent.com/u/44654998/gglab/roe.png');
+}
+.member-100-3 {
+  background-image: url('https://dl.dropboxusercontent.com/u/44654998/gglab/annie.png');
+}
+.member-100-4 {
+  background-image: url('https://dl.dropboxusercontent.com/u/44654998/gglab/eat.png');
+}
+.member-100-5 {
+  background-image: url('https://dl.dropboxusercontent.com/u/44654998/gglab/chu.png');
+}
+.member-101-1 {
+  background-image: url('https://dl.dropboxusercontent.com/u/44654998/gglab/handsome.png');
+}
+.member-101-2 {
+  background-image: url('https://dl.dropboxusercontent.com/u/44654998/gglab/summer.png');
+}
+.member-101-3 {
+  background-image: url('https://dl.dropboxusercontent.com/u/44654998/gglab/yen.png');
+}
+.member-101-4 {
+  background-image: url('https://dl.dropboxusercontent.com/u/44654998/gglab/hsu.png');
+}
+.member-101-5 {
+  background-image: url('https://dl.dropboxusercontent.com/u/44654998/gglab/boo.png');
+}
+.member-100-desc, .member-101-desc {
+  margin-top: 480px;
+  background-color: rgba(0,0,0,0.4);
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 1px 15px;
+  line-height: 7px;
+  color: #fff;
+}
+.play {
+  position: relative;
+  width: 98%;
+  height: 900px;
+  margin: 0 2%;
+  padding: 30px 0;
+}
+.game {
+  position: relative;
+  float: left;
+  width: 23%;
+  margin-right: 2%;
+}
+
+.game-play{
+  width: 50%;
+  min-height: 680px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+#game-title {
+  font-size: 2em;
+  letter-spacing: 7px;
+  border-bottom: 3px solid #eee;
+  line-height: 60px;
+}
+
+#game-desc {
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  margin: 10px;
+}
+
+#game-desc li {
+  margin-left: 10px;
+  line-height: 26px;
+}
+.game-btn, .back-btn{
+  border: 1px solid #000;
+  border-radius: 5px;
+  width: 128px;
+  letter-spacing: 5px;
+  line-height: 50px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 38px;
+  margin-bottom: 50px;
+  position: relative;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+}
+.game-btn:hover, .back-btn:hover {
+  padding-left: 20px;
+  padding-right: 50px;
+}
+.game-btn img, .back-btn img {
+  line-height: 50px;
+  position: absolute;
+  right: -35px;
+  top: 14px;
+  -webkit-transition: all 0.3s ease;
+}
+.game-btn:hover img, .back-btn:hover img{
+  position: absolute;
+  right: 12px;
+  top: 14px;
+  -webkit-transition: all 0.3s ease;
+}
+.game-btn a, .back-btn a {
+  text-decoration: none;
+  color: #000;
+}
+.post {
+  width: 600px;
+  height: 900px;
+  margin: 0 auto;
+  position: relative;
+  left: -360px;
+}
+
+#user-name {
+  color: #0E138A;
+  font-size: 27px;
+  border: 3px solid #0E138A;
+  padding: 5px;
+  letter-spacing: 5px;
+  margin: 0 10px;
+}
+#game-desc-img {
+  height: 500px;
+  background-image: url('https://dl.dropboxusercontent.com/u/44654998/gglab/game5.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.comment {
+  position: absolute;
+  top: 140px;
+  left: 745px;
+}
+.comment .game {
+  width: 620px;
+}
+.comment p {
+  border: 1px solid #aaa;
+  line-height: 60px;
+  padding-left: 20px;
+}
+.comment .game-btn {
+  margin-left: 490px;
+  margin-bottom: 0;
+}
+.answer {
+  margin-top: 70px;
+  border-top: 1px dashed #999;
+  padding-top: 40px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.answer input ,.login input {
+  width: 100%;
+  height: 50px;
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+.alert {
+  font-size: 0.2em;
+  color: red;
+  line-height: 0;
+}
+
+.login {
+  text-decoration: none;
+}
+
+.submit {
+  text-align: right;
+  margin-top: 20px;
+}
+.submit .btn {
+  background-color: #FFF;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  border: 1px solid #000;
+  width: 106px;
+  -webkit-transition: all 0.1s ease-out;
+}
+.submit a {
+  text-decoration: none;
+  color: #000;
+}
+.submit .btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.navbar {
+  height: 800px;
+  width: 100%;
+  background-color: #000;
+  background-image: url('https://dl.dropboxusercontent.com/u/44654998/gglab/bg2-blur.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*footer*/
+#wrapper {
+  min-height:100%;
+  position: relative;
+}
+.clearfix:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.footer {
+  height: 60px;
+  /*position: relative;
+  top: 0;*/
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  line-height: 60px;
+  position:absolute;
+  bottom: 0;
+  /*z-index: -100;*/
+}
