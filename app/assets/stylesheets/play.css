@@ -14,7 +14,7 @@
 
 .game-play{
   width: 50%;
-  height: 600px;
+  min-height: 680px;
   margin: 0 auto;
   padding: 30px 0;
 }

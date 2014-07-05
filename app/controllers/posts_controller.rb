@@ -1,16 +1,19 @@
 class PostsController < ApplicationController
   def index
-
+    @user = current_user
   end
   def show
+    @user = current_user
     @post = Post.find(params[:id])
     @comments = @post.comments.all
     @comment = @post.comments.build
   end
   def new
+    @user = current_user
     @post = Post.new
   end
   def create
+    @user = current_user
     @post = Post.new(post_params)
     respond_to do |format|
       if @post.save
@@ -23,6 +26,7 @@ class PostsController < ApplicationController
     end
   end
   def edit
+    @user = current_user
     @post = Post.find(params[:id])
   end
   def update

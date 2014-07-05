@@ -3,7 +3,7 @@
   <%= link_to 'Rules','/rules#menubar', :class => "menu-link" %>
   <%= link_to "Let's Play",'/intro#menubar', :class => "menu-link" %>
   <% if user_signed_in? %>
-    <%= link_to "Sign-out", destroy_user_session_path, method: :delete, :class => 'menu-link' %>
+    <%= link_to "#{@user.user_name}", destroy_user_session_path, method: :delete, :class => 'menu-link', data: { confirm: '你確定要登出嗎？' } %>
   <% else %>
     <%= link_to 'Login','/users/sign_in#menubar', :class => "menu-link" %>
   <% end %>
