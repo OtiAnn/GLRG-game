@@ -18,7 +18,8 @@
 .cover-box #title {
   font-size: 11em;
   position: relative;
-  top: -150px;
+  top: -160px;
+  font-family: helvetica;
   font-family: halvitica;
 }
 .cover-box #sub-title {
@@ -53,6 +54,7 @@
   text-align: center;
   line-height: 50px;
   letter-spacing: 30px;
+  font-family: halvitica, monospace;
 }
 .cover-box #time {
   width: 470px;
@@ -65,7 +67,7 @@
   position: absolute;
   top: 310px;
   margin: 0 15px;
-  padding-top: 3px
+  padding-top: 3px;
 }
 .gift{
   position:relative;
@@ -109,12 +111,12 @@
   to {top: -5px;}
 }
 .cover-box #desc {
-  font-family: Nanum Pen Script;
+  font-family: 'Nanum Pen Script', cursive;
   font-weight: 900;
-  font-size: 3em;
+  font-size: 2.5em;
   letter-spacing: 5px;
   position: absolute;
-  top: 320px;
+  top: 333px;
   width: 100%;
   text-align: center;
   -webkit-transition: all 0.5s ease;
