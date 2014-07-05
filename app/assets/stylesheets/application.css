@@ -53,13 +53,26 @@ body {
   background-size: cover;
 }
 /*footer*/
+#wrapper {
+  min-height:100%;
+  position: relative;
+  padding-bottom: 80px;
+}
+.clearfix:after{
+  content:"";
+  display:block;
+  clear:both;
+}
 .footer {
   height: 60px;
-  position: relative;
-  top: 0;
+  /*position: relative;
+  top: 0;*/
   background-color: #000;
   color: #fff;
   width: 100%;
   text-align: center;
   line-height: 60px;
+  position:absolute;
+  bottom: 0;
+  /*z-index: -100;*/
 }

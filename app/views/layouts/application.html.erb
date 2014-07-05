@@ -8,24 +8,26 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div class="navbar">
-    <div class="cover-box">
-      <p id="title"><%= link_to 'GLRG', root_path %></p>
-      <p id="sub-title">100 x 101</p>
-      <p id="date">7/19</p>
-      <p id="time">12:00-18:00</p>
-      <a href="#menubar"><p id="desc">Let's find your <span class="gift">gift</span>!</p></a>
+  <div id="wrapper" class="clearfix">
+    <div class="navbar">
+      <div class="cover-box">
+        <p id="title"><%= link_to 'GLRG', root_path %></p>
+        <p id="sub-title">100 x 101</p>
+        <p id="date">7/19</p>
+        <p id="time">12:00-18:00</p>
+        <a href="#menubar"><p id="desc">Let's find your <span class="gift">gift</span>!</p></a>
+      </div>
     </div>
-  </div>
 
-  <a name="menubar">
+    <a name="menubar">
 
-  <div class="content">
-    <%= yield %>
-  </div>
+    <div class="content">
+      <%= yield %>
+    </div>
 
-  <div class="footer">
-    <span>GLRG 100 x 101</span>
+    <div class="footer">
+      <span>GLRG 100 x 101</span>
+    </div>
   </div>
 </body>
 </html>
