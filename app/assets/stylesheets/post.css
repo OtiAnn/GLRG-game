@@ -15,11 +15,10 @@
   margin: 0 10px;
 }
 #game-desc-img {
-  width: 101%;
   height: 500px;
   background-image: url('game5.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 .comment {
   position: absolute;

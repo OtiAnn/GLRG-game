@@ -10,7 +10,7 @@
 </div>
 
 <div class="game-play">
-  <div id="game-title" class="lsf-icon" title="game">找到靈魂伴侶</div>
+  <div id="game-title"><img src="https://dl.dropboxusercontent.com/u/44654998/gglab/pac.png" width="40px" /> 找到靈魂伴侶</div>
   <div id="game-desc">
     <p>親愛的<span id="user-name"><%= @user.user_name if current_user.present? %></span>，以下是你的物品：</p>
     <ol>
@@ -27,5 +27,5 @@
     <li>小丘：悠遊卡</li>
     <li>小憋：Mac <3 </li>
   </div>
-  <div class="back-btn"><span class="lsf-icon" title="arrowleft"></span><%= link_to 'Back', '/intro/#menubar' %></div>
+  <div class="back-btn"><img src="https://dl.dropboxusercontent.com/u/44654998/gglab/arrowleft.png"/><%= link_to 'Back', '/intro/#menubar' %></div>
 </div>
