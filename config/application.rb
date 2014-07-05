@@ -20,16 +20,5 @@ module GLRG
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
     config.assets.initialize_on_precompile = false
-    config.serve_static_assets = true
-    config.assets.compile = true
-    config.assets.enabled = true
-    config.assets.precompile += [
-      'ligature_symbols.css',
-      'LigatureSymbols-2.11.eot',
-      'LigatureSymbols-2.11.otf',
-      'LigatureSymbols-2.11.svg',
-      'LigatureSymbols-2.11.ttf',
-      'LigatureSymbols-2.11.woff'
-    ]
   end
 end
