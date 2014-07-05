@@ -2,8 +2,8 @@
   position: relative;
   width: 98%;
   height: 900px;
-  top: 30px;
   margin: 0 2%;
+  padding: 30px 0;
 }
 .game {
   position: relative;
@@ -14,7 +14,9 @@
 
 .game-play{
   width: 50%;
+  height: 600px;
   margin: 0 auto;
+  padding: 30px 0;
 }
 
 #game-title {
