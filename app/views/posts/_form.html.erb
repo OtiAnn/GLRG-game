@@ -1,4 +1,5 @@
-<%= form_for @post do |f| %>
+<div class="game-play">
+<%= form_for @post, url: polymorphic_path(@post, anchor: 'menubar')  do |f| %>
   <div>
     <img src="https://dl.dropboxusercontent.com/u/44654998/gglab/arrowright.png"/><span><%= f.label :"文章標題" %></span><br><br>
     <%= f.text_field :title %>
@@ -13,3 +14,4 @@
     <%= f.submit :"送出", :class => "btn" %>
   </div>
 <% end %>
+</div>
