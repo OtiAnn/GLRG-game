@@ -1,13 +1,3 @@
-<div class="menu">
-  <%= link_to 'Members','/members#menubar', :class => "menu-link" %>
-  <%= link_to 'Rules','/rules#menubar', :class => "menu-link" %>
-  <%= link_to "Let's Play",'/intro#menubar', :class => "menu-link" %>
-  <% if user_signed_in? %>
-    <%= link_to "Sign-out", destroy_user_session_path, method: :delete, :class => 'menu-link' %>
-  <% else %>
-    <%= link_to 'Login','/users/sign_in#menubar', :class => "menu-link", :id => "selected" %>
-  <% end %>
-</div>
 <div class="game-play">
   <div id="game-title">Sign in</div>
   <div id="game-desc">
