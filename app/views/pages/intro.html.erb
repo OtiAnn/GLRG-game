@@ -1,14 +1,3 @@
-<div class="menu">
-  <%= link_to 'Members','/members#menubar', :class => "menu-link" %>
-  <%= link_to 'Rules','/rules#menubar', :class => "menu-link" %>
-  <%= link_to "Let's Play",'/intro#menubar', :class => "menu-link", :id => "selected" %>
-  <% if user_signed_in? %>
-    <%= link_to "#{@user.user_name}", destroy_user_session_path, method: :delete, :class => 'menu-link', data: { confirm: '你確定要登出嗎？' } %>
-  <% else %>
-    <%= link_to 'Login','/users/sign_in#menubar', :class => "menu-link" %>
-  <% end %>
-</div>
-
 <div class="play">
   <div class="game">
     <div id="game-title"><img src="https://dl.dropboxusercontent.com/u/44654998/gglab/pac.png" width="40px" /> 猜密碼</div>
