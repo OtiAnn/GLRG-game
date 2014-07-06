@@ -1,4 +1,4 @@
-<%= form_for @comment do |f| %>
+<%= form_for @comment, url: polymorphic_path(@comment, anchor: 'menubar') do |f| %>
   <div class="answer">
     <img src="https://dl.dropboxusercontent.com/u/44654998/gglab/user77.png">
     <%= f.label :"寫下你的答案：" %>
