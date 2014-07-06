@@ -9,6 +9,7 @@ class PostsController < ApplicationController
     @comment = @post.comments.build
   end
   def new
+    @posts = Post.all
     @post = Post.new
   end
   def create
@@ -24,6 +25,7 @@ class PostsController < ApplicationController
     end
   end
   def edit
+    @posts = Post.all
     @post = Post.find(params[:id])
   end
   def update

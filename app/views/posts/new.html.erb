@@ -1,2 +1,27 @@
+<div class="game-play">
+<h3>新增題目</h3>
 
 <%= render 'form' %>
+
+<hr>
+<h3>目前所有題目</h3>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>題目</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @posts.each do |post| %>
+      <tr>
+        <td><%= post.id %></td>
+        <td><%= post.title %></td>
+        <td><%= link_to '看看', post %></td>
+        <td><%= link_to '編輯', edit_post_path(post) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
