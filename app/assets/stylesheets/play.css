@@ -1,7 +1,7 @@
 .play {
   position: relative;
   width: 98%;
-  height: 1000px;
+  /*height: 1000px;*/
   margin: 0 2%;
   padding: 30px 0;
 }
@@ -14,7 +14,7 @@
 
 .game-play{
   width: 50%;
-  min-height: 680px;
+  /*min-height: 680px;*/
   margin: 0 auto;
   padding: 30px 0;
 }
