@@ -1,9 +1,9 @@
 .post {
-  width: 50%;
-  min-height: 800px;
+  width: 60%;
   margin: 0 auto;
   position: relative;
-  left: -20%;
+  left: -40%;
+  top: -25px;
 }
 
 #user-name {
@@ -21,13 +21,14 @@
   background-size: contain;
 }
 .comment {
-  position: absolute;
-  top: 140px;
+  position: relative;
+  top: 50px;
   left: 50%;
   width: 50%;
 }
 .comment .game {
   width: 90%;
+  margin-bottom: 80px;
 }
 .comment p {
   border: 1px solid #aaa;
