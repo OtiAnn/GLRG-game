@@ -1,11 +1,9 @@
 class CommentsController < ApplicationController
   def new
-    @user = current_user
     @comment = Comment.new
   end
 
   def create
-    @user = current_user
     @comment = Comment.new(comment_params)
     @comment.user_id = current_user.id
     respond_to do |format|

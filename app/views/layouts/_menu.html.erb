@@ -1,0 +1,10 @@
+<div class="menu">
+  <% [['Members', '/members'], ['Rules', '/rules'], ["Let's Play",'/intro']].each do |ele| %>
+    <%= menu_link ele.first, ele.last %>
+  <% end %>
+  <% if user_signed_in? %>
+    <%= link_to "#{current_user.user_name}", destroy_user_session_path, method: :delete, :class => 'menu-link', data: { confirm: '你確定要登出嗎？' } %>
+  <% else %>
+    <%= link_to 'Login','/users/sign_in#menubar', :class => "menu-link", :id => selected_id('/users/sign_in') %>
+  <% end %>
+</div>
