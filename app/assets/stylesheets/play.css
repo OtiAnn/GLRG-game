@@ -40,6 +40,12 @@
   top: -60px;
 }
 
+.home-frame img{
+  margin-top: -80px;
+  position: relative;
+  right: -90%;
+}
+
 #game-title {
   font-size: 2em;
   letter-spacing: 7px;

@@ -20,7 +20,7 @@
 body {
   margin: 0;
 }
-h1,h2,h3,p,div {
+h1,h2,h3,p,div,a {
   font-family: halvitica, "微軟正黑體";
 }
 .answer input, .login input, .new-post input{
@@ -95,6 +95,8 @@ table {
   height: 60px;
   /*position: relative;
   top: 0;*/
+  font-size: 1.5em;
+  letter-spacing: 2px;
   background-color: #000;
   color: #fff;
   width: 100%;
