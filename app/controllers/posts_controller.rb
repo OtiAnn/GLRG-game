@@ -48,8 +48,10 @@ class PostsController < ApplicationController
   end
 
   def find_mate
-    @user = current_user
-    @stuffs = @user.stuffs
+    if current_user.present?
+      @user = current_user
+      @stuffs = @user.stuffs
+    end
   end
 
   private

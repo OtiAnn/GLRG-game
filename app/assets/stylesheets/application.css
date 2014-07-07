@@ -36,9 +36,13 @@ table {
   padding: 10px;
 }
 .alert {
-  font-size: 0.2em;
   color: red;
   line-height: 0;
+  text-align: center;
+}
+
+.alert ul{
+  list-style: none;
 }
 
 .login {

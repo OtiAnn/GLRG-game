@@ -1,3 +1,5 @@
+<% if current_user.present? %>
+
 <div class="game-play">
   <div id="game-title"><img src="https://dl.dropboxusercontent.com/u/44654998/gglab/pac.png" width="40px" /> 找到靈魂伴侶</div>
   <div id="game-desc">
@@ -18,3 +20,6 @@
   </div>
   <div class="back-btn"><img src="https://dl.dropboxusercontent.com/u/44654998/gglab/arrowleft.png"/><%= link_to 'Back', '/intro/#menubar' %></div>
 </div>
+<% else %>
+  <div class="game-play">沒猜對密碼不能偷跑啊！！！！！！！請先登入！！！！！！！！</div>
+<% end %>
