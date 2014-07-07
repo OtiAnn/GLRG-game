@@ -3,7 +3,6 @@
   width: 98%;
   /*height: 1000px;*/
   margin: 0 2%;
-  padding: 30px 0;
 }
 .game {
   position: relative;
@@ -21,7 +20,6 @@
 
 .home{
   width: 100%;
-  padding: 30px 0;
   height: 700px;
 }
 
@@ -37,7 +35,9 @@
 
 .home-frame{
   text-align: right;
-  margin-right: 10%;
+  position: relative;
+  right: 10%;
+  top: -60px;
 }
 
 #game-title {
