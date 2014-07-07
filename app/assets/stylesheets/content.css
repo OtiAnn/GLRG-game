@@ -30,11 +30,26 @@
   letter-spacing: 10px;
 }
 
+.menu-link span {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  -webkit-transition: opacity 0.2s ease;
+}
+
 .menu-link:hover {
   background-color: #000;
   color: #fff;
   border-color: #000;
   -webkit-transition: all 0.2s ease-out;
+}
+
+.menu-link span:hover {
+  opacity: 1;
 }
 
 .menu-link:hover .menu-link:before:hover, #selected:before {
