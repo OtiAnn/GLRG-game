@@ -84,6 +84,7 @@ table {
   min-height:100%;
   position: relative;
   padding-bottom: 80px;
+  background-image: url('https://dl.dropboxusercontent.com/u/44654998/gglab/brushed.png');
 }
 .clearfix:after{
   content:"";

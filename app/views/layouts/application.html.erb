@@ -19,10 +19,7 @@
       </div>
     </div>
 
-
-
     <div class="content">
-      <a name="menubar"></a>
       <%= render 'layouts/menu' %>
 
       <% if notice %>
@@ -40,5 +37,13 @@
       <span>GLRG 100 x 101</span>
     </div>
   </div>
+  <script>
+    $('a').click(function(){
+      $('html, body').animate({
+          scrollTop: $( $.attr(this, 'href') ).offset().top
+      }, 700);
+      return false;
+    });
+  </script>
 </body>
 </html>
