@@ -3,14 +3,16 @@
   position: relative;
   width: 100%;
   min-height: 700px;
+  padding-top: 0;
 }
 
 .menu {
   position: relative;
-  width: 98%;
+  width: 100%;
   top: -90px;
-  margin-left: 1%;
   padding-top: 7px;
+  height: 75px;
+  z-index: 1 !important;
 }
 
 .menu-link {
@@ -22,7 +24,6 @@
   text-align: center;
   font-size: 2em;
   border: 1px solid;
-  margin-left: -1px;
   text-decoration: none;
   font-family: halvitica;
   color: #fff;
@@ -37,7 +38,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #000000;
+  background-color: #000;
   color: #E6D0BE;
   -webkit-transition: opacity 0.2s ease;
 }
@@ -47,6 +48,18 @@
   color: #FFE8E8;
   border-color: #fff;
   -webkit-transition: all 0.2s ease-out;
+}
+
+.menu.active-fixed .menu-link:hover {
+  background-color: #666;
+}
+
+.menu.active-fixed #selected {
+  background-color: #666;
+}
+
+.menu.active-fixed .menu-link span {
+  background-color: #666;
 }
 
 .menu-link span:hover {
