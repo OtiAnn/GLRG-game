@@ -2,21 +2,22 @@
 
 <div class="game-play">
   <div id="game-title"><img src="https://dl.dropboxusercontent.com/u/44654998/gglab/pac.png" width="40px" /> 找到靈魂伴侶</div>
-  <div id="game-desc">
+  <div id="mate-desc">
     <p>親愛的<span id="user-name"><%= @user.user_name if current_user.present? %></span>，以下是你的物品：</p>
     <ol>
     <% @stuffs.each do |stuff| %>
       <li><%= stuff.name %></li>
     <% end %>
     </ol>
+
   </div>
-  <div id="game-desc">
-    <p>有一個幸運兒的靈魂伴侶是學長姐，Try it！</p>
-    <li>雪迪：發哥令牌</li>
-    <li>香菇：高鐵票</li>
-    <li>小洛：工作證</li>
-    <li>小丘：悠遊卡</li>
-    <li>小憋：Mac <3 </li>
+  <div id="game-desc-down">
+    <h3>有一個幸運兒的靈魂伴侶是學長姐，Try it！</h3>
+    <p>雪迪<br>發哥令牌</p>
+    <p>香菇<br>高鐵票</p>
+    <p>小洛<br>工作證</p>
+    <p>小丘<br>悠遊卡</p>
+    <p>小憋<br>Mac</p>
   </div>
   <div class="back-btn"><img src="https://dl.dropboxusercontent.com/u/44654998/gglab/arrowleft.png"/><%= link_to 'Back', '/intro/#menubar' %></div>
 </div>
@@ -25,7 +26,7 @@
     <div id="game-title">去面壁！！！！！</div>
     <div id="game-desc">沒猜對密碼不能偷跑啊！！！！！！！請先登入！！！！！！！！</div>
     <div class="home-frame">
-      <img src="https://dl.dropboxusercontent.com/u/44654998/gglab/back.png">
+      <img width="100%" src="https://dl.dropboxusercontent.com/u/44654998/gglab/back.png">
     </div>
   </div>
 <% end %>
