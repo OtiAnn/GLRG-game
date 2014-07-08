@@ -7,10 +7,8 @@ gem 'carrierwave'
 
 gem 'ruby'
 
-gem 'pry-rails'
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.1'
+gem 'rails'
 # Use postgresql as the database for Active Record
 gem 'pg'
 gem 'rails_12factor', '0.0.2'
@@ -46,4 +44,11 @@ gem 'spring',        group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+group :development do
+  gem 'hirb'
+  gem 'hirb-unicode'
+end
+
+
 
