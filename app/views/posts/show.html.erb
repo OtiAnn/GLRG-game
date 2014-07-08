@@ -25,8 +25,12 @@
   </div>
 </div>
 <div class="game-play">
-<h3>目前分數</h3>
 <table>
+  <thead>
+    <tr>
+      <th>目前分數</th>
+    </tr>
+  </thead>
   <tbody>
     <% @users.order("score DESC").each do |user| %>
       <tr>
