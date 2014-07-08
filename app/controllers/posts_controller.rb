@@ -1,49 +1,50 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
+  before_action :sorted_posts, only: [:new, :edit]
 
   def index
+
   end
+
   def show
     @comments = @post.comments.all
     @comment = @post.comments.build
-    # @sorted_users = User.order("score DESC")
     @sorted_users = User.all.sorted_by_score
   end
+
   def new
-    @posts = Post.all
     @post = Post.new
   end
+
   def create
     @post = Post.new(post_params)
     respond_to do |format|
       if @post.save
-        format.html { redirect_to @post, notice: '文章儲存成功！' }
-        format.json { render :show, status: :created, location: @post }
+        format.html { redirect_to @post, notice: '題目儲存成功！' }
       else
         format.html { render :new }
-        format.json { render json: @post.errors, status: :unprocessable_entity }
       end
     end
   end
+
   def edit
-    @posts = Post.all
+
   end
+
   def update
     respond_to do |format|
       if @post.update(post_params)
-        format.html { redirect_to @post, notice: '文章更新成功！' }
-        format.json { render :show, status: :ok, location: @post }
+        format.html { redirect_to @post, notice: '題目更新成功！' }
       else
         format.html { render :edit }
-        format.json { render json: @post.errors, status: :unprocessable_entity }
       end
     end
   end
+
   def destroy
     @post.destroy
     respond_to do |format|
-      format.html { redirect_to :back, notice: '文章刪除成功！' }
-      format.json { head :no_content }
+      format.html { redirect_to :back, notice: '題目刪除成功！' }
     end
   end
 
@@ -55,6 +56,10 @@ class PostsController < ApplicationController
   end
 
   private
+
+  def sorted_posts
+      @sorted_posts = Post.all.sorted_by_post_id
+  end
 
   def set_post
       @post = Post.find(params[:id])

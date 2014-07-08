@@ -2,8 +2,9 @@
   <% [['Members', '/members'], ['Rules', '/rules'], ["Let's Play",'/intro']].each do |ele| %>
     <%= menu_link ele.first, ele.last %>
   <% end %>
+
   <% if user_signed_in? %>
-    <a class="menu-link" data-confirm="你確定要登出嗎？" data-method="delete" href="/users/sign_out" rel="nofollow"><span>Sign Out</span><%= "#{current_user.user_name}" %></a>
+    <a class="menu-link" data-confirm="你確定要登出嗎？" data-method="delete" href="/users/sign_out#menubar" rel="nofollow"><span>Sign Out</span><%= "#{current_user.user_name}" %></a>
   <% else %>
     <%= link_to 'Login','/users/sign_in#menubar', :class => "menu-link", :id => selected_id('/users/sign_in') %>
   <% end %>

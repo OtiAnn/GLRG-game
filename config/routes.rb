@@ -1,17 +1,13 @@
 Rails.application.routes.draw do
   devise_for :users
 
-  resources :comments do
+  resources :comments, :only => [:new, :create, :user_score] do
     member do
       post 'user_score'
     end
   end
 
   resources :posts
-
-  namespace :admin do
-    resources :users, :only => [:destroy]
-  end
 
   root 'home#index'
 

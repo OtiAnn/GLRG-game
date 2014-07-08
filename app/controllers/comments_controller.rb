@@ -8,9 +8,9 @@ class CommentsController < ApplicationController
     @comment.user_id = current_user.id
     respond_to do |format|
       if @comment.save
-        format.html { redirect_to @comment.post, notice: '你的回應儲存成功！' }
+        format.html { redirect_to @comment.post, notice: '你的答案發送成功！' }
       else
-        format.html { redirect_to @comment.post, notice: '你的回應儲存失敗！' }
+        format.html { redirect_to @comment.post, notice: '你的答案發送失敗！' }
       end
     end
   end
