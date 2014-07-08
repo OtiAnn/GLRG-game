@@ -63,6 +63,7 @@ table {
   padding: 10px 20px;
   border: 1px solid #000;
   width: 106px;
+  cursor: pointer;
   -webkit-transition: all 0.1s ease-out;
 }
 .submit a {

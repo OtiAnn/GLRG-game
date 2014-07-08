@@ -2,7 +2,15 @@
   <div class="game-btn"><%= link_to 'Next', "/posts/#{@post.id+1}#menubar" %><img src="https://dl.dropboxusercontent.com/u/44654998/gglab/arrowright.png"/></div>
   <div class="game">
   <% @comments.each do |comment| %>
-    <div id="comment-title"><img src="https://dl.dropboxusercontent.com/u/44654998/gglab/user77.png"><%= comment.user.user_name %></div>
+    <div id="comment-title">
+      <img src="https://dl.dropboxusercontent.com/u/44654998/gglab/user77.png">
+      <%= comment.user.user_name %>
+      <% if current_user.admin == true %>
+        <span class="submit">
+          <%= button_to '+1', user_score_comment_path(comment), method: :post, :class => "btn" %>
+        </span>
+      <% end %>
+    </div>
       <p><%= comment.body %></p>
   <% end %>
 
@@ -15,4 +23,17 @@
   <div id="game-desc">
     <%= image_tag(@post.picture_url, width: '50%') if @post.picture.present? %>
   </div>
+</div>
+<div class="game-play">
+<h3>目前分數</h3>
+<table>
+  <tbody>
+    <% @users.order("score DESC").each do |user| %>
+      <tr>
+        <th><%= user.user_name %></th>
+        <th><%= user.score %></th>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
 </div>

@@ -1,7 +1,12 @@
 Rails.application.routes.draw do
   devise_for :users
 
-  resources :comments
+  resources :comments do
+    member do
+      post 'user_score'
+    end
+  end
+
   resources :posts
 
   namespace :admin do

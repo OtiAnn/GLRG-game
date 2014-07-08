@@ -6,7 +6,5 @@ class User < ActiveRecord::Base
   has_many :stuffs
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
-  def admin?
-    admin
-  end
+
 end

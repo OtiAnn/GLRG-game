@@ -40,6 +40,23 @@
   margin-right: 10%;
   margin-bottom: 0;
 }
+
+#comment-title .submit {
+  text-align: left;
+  position: absolute;
+  margin-top: 0;
+  margin-left: 20px;
+}
+
+#comment-title .submit .btn {
+  padding: 5px;
+  width: 40px;
+}
+
+#comment-title .submit .btn:hover {
+  background-color: #B91A1A;
+}
+
 .answer {
   margin-top: 70px;
   border-top: 1px dashed #999;

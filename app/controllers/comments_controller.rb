@@ -15,6 +15,14 @@ class CommentsController < ApplicationController
     end
   end
 
+  def user_score
+    @comment = Comment.find(params[:id])
+    @user = @comment.user
+    @user.score += 1
+    @user.update(params.permit(:score))
+    redirect_to @comment.post
+  end
+
   private
     def comment_params
       params.require(:comment).permit(:body, :post_id, :user_id)
