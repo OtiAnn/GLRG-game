@@ -4,10 +4,10 @@ class PostsController < ApplicationController
   def index
   end
   def show
-    @post = Post.find(params[:id])
     @comments = @post.comments.all
     @comment = @post.comments.build
-    @users = User.all
+    # @sorted_users = User.order("score DESC")
+    @sorted_users = User.all.sorted_by_score
   end
   def new
     @posts = Post.all
@@ -27,7 +27,6 @@ class PostsController < ApplicationController
   end
   def edit
     @posts = Post.all
-    @post = Post.find(params[:id])
   end
   def update
     respond_to do |format|

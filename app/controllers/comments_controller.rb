@@ -16,11 +16,10 @@ class CommentsController < ApplicationController
   end
 
   def user_score
-    @comment = Comment.find(params[:id])
-    @user = @comment.user
+    @user = User.find(params[:id])
     @user.score += 1
     @user.update(params.permit(:score))
-    redirect_to @comment.post
+    redirect_to request.referer
   end
 
   private

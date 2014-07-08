@@ -7,4 +7,6 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
+  scope :sorted_by_score, -> { order('score desc') }
+
 end
