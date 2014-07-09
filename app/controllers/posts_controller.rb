@@ -8,7 +8,7 @@ class PostsController < ApplicationController
 
   def show
     if @post.blank?
-      redirect_to posts_path
+      redirect_to posts_path, notice: '全部題目都做完了喔！'
     else
       @comments = @post.comments.all
       @comment = @post.comments.build
