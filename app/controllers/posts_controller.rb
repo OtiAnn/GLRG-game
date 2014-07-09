@@ -7,9 +7,13 @@ class PostsController < ApplicationController
   end
 
   def show
-    @comments = @post.comments.all
-    @comment = @post.comments.build
-    @sorted_users = User.all.sorted_by_score
+    if @post.blank?
+      redirect_to posts_path
+    else
+      @comments = @post.comments.all
+      @comment = @post.comments.build
+      @sorted_users = User.all.sorted_by_score
+    end
   end
 
   def new
@@ -62,7 +66,7 @@ class PostsController < ApplicationController
   end
 
   def set_post
-      @post = Post.find(params[:id])
+      @post = Post.find_by_id(params[:id])
   end
 
   def post_params
