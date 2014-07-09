@@ -1,10 +1,4 @@
-/*content*/
-.content {
-  position: relative;
-  width: 100%;
-  min-height: 700px;
-  padding-top: 0;
-}
+/*menu*/
 
 .menu {
   position: relative;
@@ -81,4 +75,54 @@
   background-color: rgba(255, 255, 255, 0.4);
   color: #FFE8E8;
   border-color: #fff;
+}
+
+@media screen and (min-width: 900px) and (max-width: 1280px) {
+  .menu-link {
+    font-size: 1.7em;
+    letter-spacing: 3px;
+  }
+  .menu-link:hover .menu-link:before:hover, #selected:before {
+    left: 44%;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 899px) {
+  .menu-link {
+    font-size: 1.2em;
+    letter-spacing: 2px;
+  }
+  .menu-link:hover .menu-link:before:hover, #selected:before {
+    left: 40%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 639px) {
+  .menu-link {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+  }
+  .menu-link:hover .menu-link:before:hover, #selected:before {
+    left: 40%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .menu-link {
+    position: relative;
+    float: left;
+    clear: both;
+    width: 100%;
+    background-color: rgba(0,0,0,0.8);
+  }
+  .menu-link:hover, #selected {
+    background-color: #fff;
+    color: #000;
+}
+  .menu-link:hover .menu-link:before:hover, #selected:before {
+    display: none;
+  }
+  .content {
+    padding-top: 375px;
+  }
 }

@@ -87,6 +87,14 @@ thead {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.content {
+  position: relative;
+  width: 100%;
+  min-height: 700px;
+  padding-top: 0;
+}
+
 /*footer*/
 #wrapper {
   min-height:100%;
