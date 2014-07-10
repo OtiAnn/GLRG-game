@@ -115,10 +115,15 @@
     width: 100%;
     background-color: rgba(0,0,0,0.8);
   }
-  .menu-link:hover, #selected {
+  .menu-link:hover, #selected, .menu.active-fixed .menu-link span{
     background-color: #fff;
     color: #000;
-}
+  }
+
+  .menu.active-fixed .menu-link:hover {
+    background-color: #fff;
+  }
+
   .menu-link:hover .menu-link:before:hover, #selected:before {
     display: none;
   }

@@ -48,10 +48,14 @@
                           'height': '89px'
                           });
         $('.menu').addClass('active-fixed');
-        if($(window).width() >= 480){
+        if($(window).width() > 480 ){
           $('.content').css('padding-top', '75px');
         }else{
-          $('.content').css('padding-top', '300px');
+          $('.content').css('padding-top', '225px');
+          $('.menu').css({'position': 'relative',
+                          'top': '-90px',
+                          'height': '75px'
+                        })
         }
       }else{
         $('.menu').css({'position': 'relative',
