@@ -46,6 +46,47 @@
   right: -90%;
 }
 
+@media screen and (max-width: 1280px) {
+  .rules-intro{
+    width: 80%;
+  }
+  .home-frame {
+    top: 90px;
+  }
+  .home-frame img {
+    left: 15%;
+  }
+  .game {
+    float: none;
+    width: 98%;
+  }
+  #game-desc-img {
+    margin: 0 15%;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1280px) {
+  .game-play {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 899px) {
+  .game-play {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .game-play {
+    width: 100%;
+  }
+  .game-play #mate-desc {
+    font-size: 1em;
+  }
+  .game-play #user-name {
+    font-size: 1em;
+  }
+}
+
+
 #game-title {
   font-size: 2em;
   letter-spacing: 7px;
