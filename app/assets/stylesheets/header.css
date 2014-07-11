@@ -128,7 +128,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 321px) and (max-width: 480px) {
   .cover-box #title {
     font-size: 8em;
   }
@@ -145,5 +145,25 @@
   .cover-box #desc {
     font-size: 2em;
     top: 350px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .cover-box #title {
+    font-size: 7em;
+  }
+  .cover-box #sub-title {
+    font-size: 1em;
+  }
+  .cover-box #date {
+    font-size: 3em;
+    top: 150px;
+  }
+  .cover-box #time {
+    font-size: 0.5em;
+  }
+  .cover-box #desc {
+    font-size: 1.5em;
+    top: 380px;
   }
 }
