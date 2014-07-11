@@ -1,8 +1,7 @@
 .post {
   width: 60%;
-  margin: 0 auto;
   position: relative;
-  left: -40%;
+  left: 5%;
   top: -25px;
 }
 
@@ -22,8 +21,8 @@
   margin: 10px;
 }
 .comment {
-  position: relative;
-  top: 50px;
+  position: absolute;
+  top: -25px;
   left: 50%;
   width: 50%;
 }
@@ -35,6 +34,7 @@
   border: 1px solid #aaa;
   line-height: 60px;
   padding-left: 20px;
+  margin-right: 10%;
 }
 .comment .game-btn {
   margin-right: 10%;
@@ -61,4 +61,57 @@
   margin-top: 70px;
   border-top: 1px dashed #999;
   padding-top: 40px;
+}
+
+@media screen and (min-width: 900px) {
+  .comment .answer > input{
+    width: 90%;
+  }
+  .comment .submit{
+    margin-right: 10%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 899px) {
+  .post, .post table {
+    width: 94%;
+  }
+  .post img {
+    width: 80%;
+    position: relative;
+    left:10%;
+  }
+  .comment {
+    position: relative;
+    width: 94%;
+    left: 3%;
+  }
+  .comment p {
+    margin-right: 0;
+  }
+  .comment .game-btn {
+    margin-right: 0;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .post, .post table {
+    width: 100%;
+    left: 0;
+  }
+  .post img {
+    width: 100%;
+  }
+  .comment {
+    position: relative;
+    width: 96%;
+    left: 2%;
+  }
+  .comment p {
+    margin-right: 0;
+  }
+  .comment .game-btn {
+    margin-right: 0;
+  }
 }

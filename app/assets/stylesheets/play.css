@@ -47,7 +47,7 @@
 }
 
 @media screen and (max-width: 1280px) {
-  .rules-intro{
+  .rules-intro, .home-intro{
     width: 80%;
   }
   .home-frame {

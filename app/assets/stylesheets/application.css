@@ -32,11 +32,14 @@ strong {
   padding-left: 20px;
   font-size: 20px;
 }
+
 table {
-  width: 100%;
+  width: 50%;
   text-align: left;
   border: 1px solid #aaa;
   padding: 10px;
+  margin-top: 50px;
+  position: relative;
 }
 thead {
   text-align: center;

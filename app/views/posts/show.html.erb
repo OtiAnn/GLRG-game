@@ -1,10 +1,16 @@
+<div class="post">
+  <h1><%= @post.title %></h1>
+  <div id="game-desc">
+    <%= image_tag(@post.picture_url, width: '50%') if @post.picture.present? %>
+  </div>
+</div>
+
 <div class="comment">
   <div class="game-btn">
     <%= link_to 'Next', "/posts/#{@post.id+1}#menubar" %>
     <img src="https://dl.dropboxusercontent.com/u/44654998/gglab/arrowright.png"/>
   </div>
 
-  <div class="game">
   <% @comments.each do |comment| %>
     <div id="comment-title">
       <img src="https://dl.dropboxusercontent.com/u/44654998/gglab/user77.png">
@@ -19,16 +25,10 @@
   <% end %>
 
   <%= render 'comments/form' %>
-  </div>
 </div>
-<div class="post">
 
-  <h1><%= @post.title %></h1>
-  <div id="game-desc">
-    <%= image_tag(@post.picture_url, width: '50%') if @post.picture.present? %>
-  </div>
-</div>
-<div class="game-play">
+
+<div class="post">
 <table>
   <thead>
     <tr>
