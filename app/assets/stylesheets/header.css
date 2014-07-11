@@ -128,8 +128,8 @@
   cursor: pointer;
 }
 
-@media screen and (max-device-width: 480px) {
-/*  .cover-box #title {
+@media screen and (max-width: 480px) {
+  .cover-box #title {
     font-size: 8em;
   }
   .cover-box #sub-title {
@@ -141,7 +141,7 @@
   }
   .cover-box #time {
     font-size: 1.5em;
-  }*/
+  }
   .cover-box #desc {
     font-size: 2em;
     top: 350px;
