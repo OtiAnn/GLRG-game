@@ -128,7 +128,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-device-width: 480px) {
   .cover-box #title {
     font-size: 8em;
   }
