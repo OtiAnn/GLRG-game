@@ -44,10 +44,10 @@
     $(window).scroll(function(){
       if(window.scrollY > menubarYOffset){
         $('.menu').css({'position': 'fixed',
-                          'top': '0',
-                          'background-color': 'rgba(0,0,0,0.8)',
-                          'height': '89px'
-                          });
+                        'top': '0',
+                        'background-color': 'rgba(0,0,0,0.8)',
+                        'height': '89px'
+                        });
         $('.menu').addClass('active-fixed');
         if($(window).width() > 480 ){
           $('.content').css('padding-top', '75px');
@@ -62,10 +62,10 @@
         }
       }else{
         $('.menu').css({'position': 'relative',
-                          'top': '-90px',
-                          'background-color': 'rgba(0,0,0,0)',
-                          'height': '75px'
-                          });
+                        'top': '-90px',
+                        'background-color': 'rgba(0,0,0,0)',
+                        'height': '75px'
+                        });
         $('.menu').removeClass('active-fixed');
         $('.content').css('padding-top', '0');
         $('.comment').css('margin-top', '0');
