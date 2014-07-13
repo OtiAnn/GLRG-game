@@ -8,12 +8,12 @@
 <div class="comment">
   <div class="game-btn">
     <%= link_to 'Next', "/posts/#{@post.id+1}#menubar" %>
-    <img src="arrowright.png"/>
+    <img src="https://dl.dropboxusercontent.com/u/44654998/gglab/arrowright.png"/>
   </div>
 
   <% @comments.each do |comment| %>
     <div id="comment-title">
-      <img src="user77.png">
+      <img src="https://dl.dropboxusercontent.com/u/44654998/gglab/user77.png">
       <%= comment.user.user_name %>
       <% if current_user.admin == true %>
         <span class="submit">

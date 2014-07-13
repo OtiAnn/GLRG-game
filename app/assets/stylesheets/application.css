@@ -86,7 +86,7 @@ thead {
   height: 900px;
   width: 100%;
   background-color: #000;
-  background-image: url('bg2-blur.jpg');
+  background-image: url('https://dl.dropboxusercontent.com/u/44654998/gglab/bg2-blur.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -103,7 +103,7 @@ thead {
   min-height:100%;
   position: relative;
   padding-bottom: 80px;
-  background-image: url('brushed.png');
+  background-image: url('https://dl.dropboxusercontent.com/u/44654998/gglab/brushed.png');
   overflow: hidden;
 }
 .clearfix:after{

@@ -1,12 +1,12 @@
 <div>
 <%= form_for @post, url: polymorphic_path(@post, anchor: 'menubar')  do |f| %>
   <div class="new-post">
-    <img src="arrowright.png"/><span><%= f.label :"題目內容" %></span><br><br>
+    <img src="https://dl.dropboxusercontent.com/u/44654998/gglab/arrowright.png"/><span><%= f.label :"題目內容" %></span><br><br>
     <%= f.text_field :title %>
   </div>
   <br />
   <div class="new-post">
-    <img src="arrowright.png"/><span><%= f.label :"上傳圖片" %></span><br><br>
+    <img src="https://dl.dropboxusercontent.com/u/44654998/gglab/arrowright.png"/><span><%= f.label :"上傳圖片" %></span><br><br>
     <%= f.file_field :picture, :class => "upload" %>
   </div>
   <br />
