@@ -1,3 +1,4 @@
+<% if current_user.present? %>
 <div class="play">
   <div class="game">
     <div id="game-title"><img src="https://dl.dropboxusercontent.com/u/44654998/gglab/pac.png" width="40px" /> 猜密碼</div>
@@ -64,3 +65,12 @@
     </div>
   </div>
 </div>
+<% else %>
+  <div class="rules-intro">
+    <div id="game-title">去面壁！！！！！</div>
+    <div id="game-desc">沒到7/19不能偷跑啊！！！！！！！！</div>
+    <div class="home-frame">
+      <img width="100%" src="https://dl.dropboxusercontent.com/u/44654998/gglab/back.png">
+    </div>
+  </div>
+<% end %>
