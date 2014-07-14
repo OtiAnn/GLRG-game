@@ -23,6 +23,9 @@
   text-align: center;
   line-height: 215px;
 }
+.cover-box #title a {
+  font-family: halvitica, "微軟正黑體";
+}
 .cover-box #sub-title {
   position: absolute;
   top: 145px;
@@ -56,6 +59,7 @@
   text-align: center;
   letter-spacing: 30px;
   line-height: 100px;
+  font-family: halvitica, "微軟正黑體";
 }
 .cover-box #time {
   width: 94%;

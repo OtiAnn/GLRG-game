@@ -21,7 +21,8 @@ body {
   margin: 0;
 }
 h1,h2,h3,p,div,a {
-  font-family: halvitica, "微軟正黑體";
+  font-family: 'Helvetica Neue', "微軟正黑體";
+  font-weight: 200;
 }
 strong {
   color: #CF3A3A;
