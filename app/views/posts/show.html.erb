@@ -47,6 +47,7 @@
 </div>
 
 <script>
+  $("body").css("height", $("#submit-btn").offset().top+300+"px");
   $("#next-btn").click(function(){
     event.preventDefault();
     var url = $(this).attr('link-to');
