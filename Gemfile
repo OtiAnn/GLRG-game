@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'carrierwave-aws'
 
 gem 'devise'
 
