@@ -1,9 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'carrierwave-aws'
 
 gem 'devise'
-
+gem "fog", "~> 1.3.1"
 gem 'carrierwave'
 
 gem 'ruby'
