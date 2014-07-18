@@ -5,6 +5,10 @@
   top: -25px;
 }
 
+.post h1 {
+  width: 70%;
+}
+
 #user-name {
   color: #0E138A;
   font-size: 27px;
