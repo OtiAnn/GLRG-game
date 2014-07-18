@@ -94,6 +94,7 @@
 }
 
 .game-btn, .back-btn{
+  cursor: pointer;
   border: 1px solid #000;
   border-radius: 5px;
   width: 128px;

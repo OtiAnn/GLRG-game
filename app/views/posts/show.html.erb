@@ -4,10 +4,10 @@
     <%= image_tag(@post.picture_url, width: '50%') if @post.picture.present? %>
   </div>
 </div>
-
+<div id="luffy" style="display: none;"><%= @post.secret %></div>
 <div class="comment">
-  <div class="game-btn">
-    <%= link_to 'Next', "/posts/#{@post.id+1}#menubar" %>
+  <div id="next-btn" class="game-btn" link-to='<%= "/posts/#{@post.id+1}#menubar" %>'>
+    <span>Next</span>
     <img src="https://dl.dropboxusercontent.com/u/44654998/gglab/arrowright.png"/>
   </div>
 
@@ -45,3 +45,16 @@
   </tbody>
 </table>
 </div>
+
+<script>
+  $("#next-btn").click(function(){
+    event.preventDefault();
+    var url = $(this).attr('link-to');
+    var secret = $('#luffy').text()
+    if(secret == "" || prompt('打密碼啦！！ 幹！！','') == secret){
+      window.location = url;
+    }else{
+      alert('密碼錯了，去死吧～！ ＸＤ');
+    }
+  });
+</script>
